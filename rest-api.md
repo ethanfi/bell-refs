@@ -1,7 +1,7 @@
 |         TYPE      |WEB|API|URI|DESCRIPTION|
 |------------------ |---|---|---|-----------|
-| create & edit     | * | * | /[users|teachers|students]/${userId}/entities ||
-| create & edit     |   | * | /[users|teachers|students]/${userId}/entities/${entityId} ||
+| create & edit     | * | * | /\[users|teachers|students\]/${userId}/entities ||
+| create & edit     |   | * | /\[users|teachers|students\]/${userId}/entities/${entityId} ||
 | public view       | * | * | /entities ||
 | public view       | * | * | /entities/${entities} ||
 | organization view | * | * | /departments/${departmentId}/entities/${entities} ||
