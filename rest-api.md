@@ -1,14 +1,14 @@
 |         TYPE      |WEB|API|URI|DESCRIPTION|
 |------------------ |---|---|---|-----------|
-| create & edit     | * | * | /\[`users` \| `teachers` \| `students`\]/${userId}/entities ||
-| create & edit     |   | * | /\[`users` \| `teachers` \| `students`\]/${userId}/entities/${entityId} ||
-| public view       | * | * | /entities ||
-| public view       | * | * | /entities/${entityId} ||
-| organization view | * | * | /`departments`/${departmentId}/entities/${entityId} ||
-| organization view | * | * | /`adminClasses`/${adminClassId}/entities/${entityId} ||
-| approval process  | * | * | /`reviewers`/${userId}/entities | 独立审核视图 |
-| approval process  | * |   | /`reviewers`/${userId}/entities#/${entityId}/workitems/${workitemId} ||
-| approval process  |   | * | /`reviewers`/${userId}/entities/${entityId}/workitems/${workitemId} ||
-| approval process  | * | * | /entities/${entityId}/reviewers?type=\[check \| approve\] ||
-| setup             | * | * | /`settings`/entities ||
-| setup             |   | * | /`settings`/entities/${entityId} ||
+| create & edit     | * | * | /\[`users` \| `teachers` \| `students`\]/${userId}/entities | 实体列表 |
+| create & edit     |   | * | /\[`users` \| `teachers` \| `students`\]/${userId}/entities/${entityId} | 实体 |
+| public view       | * | * | /entities | 实体列表 |
+| public view       | * | * | /entities/${entityId} | 实体 |
+| organization view | * | * | /`departments`/${departmentId}/entities/${entityId} | 部门视图 |
+| organization view | * | * | /`adminClasses`/${adminClassId}/entities/${entityId} | 班级视图 |
+| approval process  | * | * | /`reviewers`/${userId}/entities | 审核列表 |
+| approval process  | * |   | /`reviewers`/${userId}/entities#/${entityId}/workitems/${workitemId} | 待办项 |
+| approval process  |   | * | /`reviewers`/${userId}/entities/${entityId}/workitems/${workitemId} | 数据 |
+| approval process  |   | * | /entities/${entityId}/reviewers?type=\[check \| approve\] | 审核人 |
+| setup             | * | * | /`settings`/entities | 实体列表 |
+| setup             |   | * | /`settings`/entities/${entityId} | 实体 |
