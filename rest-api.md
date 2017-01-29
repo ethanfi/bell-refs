@@ -3,9 +3,9 @@
 | create & edit     | * | * | /\[`users` \| `teachers` \| `students`\]/${userId}/entities ||
 | create & edit     |   | * | /\[`users` \| `teachers` \| `students`\]/${userId}/entities/${entityId} ||
 | public view       | * | * | /entities ||
-| public view       | * | * | /entities/${entities} ||
-| organization view | * | * | /`departments`/${departmentId}/entities/${entities} ||
-| organization view | * | * | /`adminClasses`/${adminClassId}/entities/${entities} ||
+| public view       | * | * | /entities/${entityId} ||
+| organization view | * | * | /`departments`/${departmentId}/entities/${entityId} ||
+| organization view | * | * | /`adminClasses`/${adminClassId}/entities/${entityId} ||
 | approval request  | * | * | /`requests`/entities | 独立审核视图 |
 | approval request  | * |   | /`requests`/entities#/${entityId}/reviews/${workitemId} | 独立审核视图 |
 | approval request  | * | * | /entities/${entityId}/reviews/${workitemId} | 待办事项 |
