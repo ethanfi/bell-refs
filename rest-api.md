@@ -6,9 +6,9 @@
 | public view       | * | * | /entities/${entityId} ||
 | organization view | * | * | /`departments`/${departmentId}/entities/${entityId} ||
 | organization view | * | * | /`adminClasses`/${adminClassId}/entities/${entityId} ||
-| approval request  | * | * | /`requests`/entities | 独立审核视图 |
-| approval request  | * |   | /`requests`/entities#/${entityId}/reviews/${workitemId} | 独立审核视图 |
-| approval request  | * | * | /entities/${entityId}/reviews/${workitemId} | 待办事项 |
-| approval request  | * | * | /entities/${entityId}/receivers?type=\[check \| approve\] ||
+| approval process  | * | * | /`reviewers`/${userId}/entities | 独立审核视图 |
+| approval process  | * |   | /`reviewers`/${userId}/entities#/${entityId}/workitems/${workitemId} ||
+| approval process  |   | * | /`reviewers`/${userId}/entities/${entityId}/workitems/${workitemId} ||
+| approval process  | * | * | /entities/${entityId}/reviewers?type=\[check \| approve\] ||
 | setup             | * | * | /`settings`/entities ||
 | setup             |   | * | /`settings`/entities/${entityId} ||
