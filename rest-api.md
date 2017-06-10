@@ -13,3 +13,5 @@
 | approval process  |   | * | /reviewers/${userId}/entities/${entityId}/reviewers?type=\[check \| approve\] | 审核人 |
 | setup             | * | * | /settings/entities | 实体列表 |
 | setup             |   | * | /settings/entities/${entityId} | 实体 |
+| admin             | * | * | /admin/entities | 实体列表 |
+| admin             |   | * | /admin/entities/${entityId} | 实体 |
